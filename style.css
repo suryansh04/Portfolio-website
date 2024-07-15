@@ -5,6 +5,9 @@
   font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
+h2 {
+  font-size: 40px;
+}
 
 /*Scrollbar Settings */
 
@@ -53,6 +56,21 @@
 .navigation-links {
   text-decoration: none;
   color: black;
+  position: relative;
+}
+
+.navigation-links::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 3px;
+  width: 0;
+  background-color: #b3b3b3;
+  transition: all 0.3s;
+}
+.navigation-links:hover::after {
+  width: 100%;
 }
 
 .navigation-container {
@@ -90,11 +108,13 @@
   font-size: 2rem;
 }
 
-img {
+.paragraph-flutter > img {
   position: absolute;
   bottom: -0.625rem;
   right: 10.6rem;
 }
+
+/* Star Physics */
 
 .star {
   cursor: grab;
@@ -118,4 +138,113 @@ img {
 
 .star-5 {
   transform: translate(40rem, 50px);
+}
+
+/* Project Section */
+
+.project-section-container {
+  cursor: grab;
+  user-select: none;
+  width: 1154px;
+  height: 515px;
+  background-image: linear-gradient(to bottom right, #8e2de2, #4a00e0);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 50px auto;
+  color: white;
+}
+
+.project-details {
+  flex: 0.5;
+}
+
+.project-name {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.project-title {
+  font-weight: 100;
+  margin-bottom: 50px;
+}
+
+.project-description {
+  font-weight: 100;
+}
+/* Award Section */
+
+.awards-section {
+  margin-top: 100px;
+}
+.awards-section > h2 {
+  margin-bottom: 50px;
+}
+.awards-section p {
+  font-size: 48px;
+}
+
+.hackerstreetz {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin: 50px 0;
+}
+
+.divider {
+  border: 1px solid #b3b3b3;
+  margin: 30px auto;
+  width: 100%;
+}
+
+.apotheosis {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin: 50px 0;
+}
+
+.footer {
+  margin-top: 200px;
+  background-color: #fafafa;
+  height: 75vh;
+  padding: 40px 90px;
+}
+
+.linkedin {
+  font-size: 40px;
+  text-decoration: none;
+}
+
+.connect-with-me {
+  display: flex;
+  justify-content: space-between;
+}
+
+.connect-with-me p {
+  font-size: 40px;
+}
+
+.connect-with-me a {
+  color: #b3b3b3;
+}
+
+.email {
+  text-decoration: none;
+  font-size: 40px;
+  color: #9b9b9b;
+}
+
+.copyright {
+  height: 50%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.copyright-text,
+.crafted-with-code {
+  font-size: 32px;
+  color: #b3b3b3;
 }
