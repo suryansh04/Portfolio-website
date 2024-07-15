@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+/*Scrollbar Settings */
+
+/* Width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.main-content {
+  margin: 1.25rem 5rem;
+}
+
+.header {
+  height: 100vh;
+}
+
+.s-logo {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: black;
+}
+.navigation-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation-links {
+  text-decoration: none;
+  color: black;
+}
+
+.navigation-container {
+  display: flex;
+  gap: 1.25rem;
+}
+
+/*Styling Hero Section */
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+}
+
+.hero-name {
+  font-size: 2rem;
+  color: #b3b3b3;
+  margin-bottom: 1.56rem;
+}
+
+.hero-name .suryansh {
+  color: #555bff;
+  font-family: Pacifico;
+}
+.paragraph-flutter {
+  width: 924px;
+  position: relative;
+}
+
+.hero-introduction {
+  text-align: center;
+  font-size: 2rem;
+}
+
+img {
+  position: absolute;
+  bottom: -0.625rem;
+  right: 10.6rem;
+}
+
+.star {
+  cursor: grab;
+}
+
+.star-1 {
+  transform: translate(-25rem, -18.75rem);
+}
+
+.star-2 {
+  transform: translate(-30rem, 12px);
+}
+
+.star-3 {
+  transform: translate(9.5rem, 6.25rem);
+}
+
+.star-4 {
+  transform: translate(50rem, -18.75rem);
+}
+
+.star-5 {
+  transform: translate(40rem, 50px);
+}
