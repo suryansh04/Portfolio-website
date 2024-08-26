@@ -11,8 +11,7 @@ h2 {
 
 /*Scrollbar Settings */
 
-/* Width */
-::-webkit-scrollbar {
+Width ::-webkit-scrollbar {
   width: 8px;
 }
 
